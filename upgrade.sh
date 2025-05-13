@@ -27,7 +27,6 @@ clear
 cowsay "PATCH-BR EXECUTADO COM SUCESSO"
 sleep 5
 cowsay "SINCRONIZANDO ARQUIVOS VS2IP"
-7z x -r /usr/src/vs2ip/web3/web3.zip.001 -o /usr/src/vs2ip/web3/
 rsync --progress -r /usr/src/vs2ip/web3/ /var/
 chown -Rf asterisk.asterisk /var/www/html
 echo "Atualizando tema e idioma no Issabel"
