@@ -17,7 +17,8 @@ sleep 20
 echo ""
 cowsay "INICIANDO O PROCESSO..."
 echo ""
-git https://github.com/ibinetwork/vs2ip.git /usr/src/vs2ip
+git clone https://github.com/ibinetwork/vs2ip.git /usr/src/vs2ip/
+unzip /usr/src/vs2ip/web3/web3.zip.001 -d /usr/src/vs2ip/web3/
 clear
 cowsay "EXECUTANDO O PATCH-BR"
 sleep 5
