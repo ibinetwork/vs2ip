@@ -17,9 +17,9 @@ sleep 20
 echo ""
 cowsay "INICIANDO O PROCESSO..."
 echo ""
+rm -Rf /usr/src/vs2ip
 git clone https://github.com/ibinetwork/vs2ip.git /usr/src/vs2ip/
-7z x -r /usr/src/vs2ip/web3/web3.zip.001 -o /usr/src/vs2ip/web3/
-clear
+echo ""
 cowsay "EXECUTANDO O PATCH-BR"
 sleep 5
 wget -O - https://github.com/ibinetwork/IssabelBR/raw/master/patch-issabelbr.sh | bash
@@ -29,6 +29,7 @@ sleep 5
 cowsay "SINCRONIZANDO ARQUIVOS VS2IP"
 7z x -r /usr/src/vs2ip/web3/web3.zip.001 -o /usr/src/vs2ip/web3/
 rsync --progress -r /usr/src/vs2ip/web3/ /var/
+chown -Rf asterisk.asterisk /var/www/html
 echo "Atualizando tema e idioma no Issabel"
 ( cat << EOJ
 BEGIN TRANSACTION;
