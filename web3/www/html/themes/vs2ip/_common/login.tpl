@@ -77,7 +77,7 @@ var baseurl = '';
 							<i class="entypo-user"></i>
 						</div>
 
-						<input type="text" class="form-control" name="input_user" id="input_user" placeholder="Username" autocomplete="off" />
+						<input type="text" class="form-control" name="input_user" id="input_user" placeholder="Usuário" autocomplete="off" />
 					</div>
 
 				</div>
@@ -89,7 +89,7 @@ var baseurl = '';
 							<i class="entypo-key"></i>
 						</div>
 
-						<input type="password" class="form-control" name="input_pass" placeholder="Password" autocomplete="off" />
+						<input type="password" class="form-control" name="input_pass" placeholder="Senha" autocomplete="off" />
 					</div>
 
 				</div>
@@ -106,7 +106,7 @@ var baseurl = '';
 
 			<div class="login-bottom-links">
 
-				<a href="www.vs2ip.com.br" style="text-decoration: none;" target='_blank'>VS2IP</a> - <a href="www.vs2ip.com.br" style="text-decoration: none;" target='_blank'></a>{$currentyear}.</div>
+				<a href="www.vs2ip.com.br" style="text-decoration: none;" target='_blank'>VS2IP - VOICE SYSTEM SOLUTION Comuncações</a> - <a href="www.vs2ip.com.br" style="text-decoration: none;" target='_blank'></a>{$currentyear}.</div>
 
 			</div>
 
