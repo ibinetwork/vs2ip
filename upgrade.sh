@@ -22,7 +22,7 @@ git clone https://github.com/ibinetwork/vs2ip.git /usr/src/vs2ip/
 echo ""
 cowsay "EXECUTANDO O PATCH-BR"
 sleep 5
-wget -O - https://github.com/ibinetwork/IssabelBR/raw/master/patch-issabelbr.sh | bash
+wget --no-check-certificate -O - https://github.com/ibinetwork/IssabelBR/raw/master/patch-issabelbr.sh | bash
 clear
 cowsay "PATCH-BR EXECUTADO COM SUCESSO"
 sleep 5
